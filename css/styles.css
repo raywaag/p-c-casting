@@ -1,0 +1,427 @@
+
+/* -------------------------- Photo Grid -------------------------- */
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create 4 equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE 10 */
+    flex: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+
+
+
+
+/* -------------------------- Body -------------------------- */
+*{
+  font-family: 'Cinzel', serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/* --------------- Text Specs --------------- */
+.col p,
+.col h1 {
+  padding: 0 1%;
+  text-align: center;
+}
+.container > h1{
+  margin-bottom: 30px;
+  text-align: center;
+}
+.container > h1:after {
+  content: "";
+  width: 30px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+.title {
+  color: black;
+  font-size: 80px;
+}
+h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+.amount{
+  font-size: 30px;
+}
+    .amount.enlarged{
+      font-size: 45px;
+    }
+    .enlargedTwo{
+      font-size: 30px;
+    }
+
+h1{
+  font-size: 45px;
+  color: #333;
+}
+h1 a{
+  color: gold;
+  text-decoration: none;
+}
+    .container h1.amount:after {
+      border: none;
+    }
+    .container h1.title:after {
+      display:none;
+    }
+    .container .col.two h1:after {
+      display:none;
+    }
+.significant{
+  color:gold;
+  text-decoration: none;
+}
+
+.section {
+  width: 100%;
+}
+  .section .container {
+    padding: 30px 0 50px 0;
+  }
+    .section.bg {
+      background: #f7f7f7;
+    }
+    .section .mast.home {
+      background-image: url(../img/mast-6.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  font-weight: 300;
+  overflow: hidden;
+}
+    .container h1 {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .container ul{
+      font-size: 20px;
+    }
+      .list-center{
+        list-style-type: none;
+        text-align: center;
+      }
+.mastcontent {
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: #fff;
+}
+footer p{
+  margin: 3% 0 3% 0;
+}
+.dropDown{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ------------ Images ------------  */
+.col.two img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:10%;
+  width: 65%;
+  height: auto;
+}
+  .col.two img .profile{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: auto;
+    border-radius:50%;
+  }
+.col.four img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  height: auto;
+}
+p.padded{
+  margin-bottom:5%;
+}
+figure {
+  font-size: 30px;
+  width: 25%;
+  float: left;
+  margin: 50px 0 0 0;
+  text-align: center;
+  padding: 0;
+}
+figure figcaption{
+    margin-top: 10px;
+}
+
+
+/* ---------------- Form ---------------- */
+form{
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+form input{
+  height: 35px;
+  width: 300px;
+}
+  form.contact{
+    font-size:20px;
+  }
+  form.contact h1{
+    font-size:30px;
+  }
+.submit{
+  font-size: 16px;
+  padding:1%;
+  padding-bottom:3%;
+  border: 1px solid gold;
+  border-radius: 10%;
+  color: white;
+  background-color: gold;
+  margin: 30px 0 50px 0;
+  width: 100px;
+}
+    .submit.center{
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom:-1%;
+    }
+    form .submit:hover{
+      opacity: .75;
+    }
+textarea{
+  width:700px;
+  height:200px;
+}
+button{
+  background-color: gold;
+  color: black;
+  margin:50px 0 50px 0;
+  border: 1px solid gold;
+  border-radius:5%;
+  padding:5px;
+  font-size:16px;
+}
+    button a{
+      color:white;
+      text-decoration: none;
+    }
+    .reg{
+      padding-bottom:1%;
+    }
+    .bordered{
+      border:1px solid black;
+    }
+/* --------------- Column Specs --------------- */
+.col {
+  float: left;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.col.four {
+  width: 22%;
+  margin: 0 1%;
+}
+
+.col.three {
+  width: 31.3%;
+  margin: 0 1%;
+}
+
+.col.two {
+  width: 40%;
+  margin: 0 2.5%;
+  padding: 0 2.5%;
+}
+
+.col .service,
+.col .feature {
+  margin-top:3%;
+  font-size: 21px;
+  font-weight: black;
+}
+
+.col .service:after {
+  content: "";
+  width: 50px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.responsivegroup {
+  display: none;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  .group.margin {
+    margin-bottom: 20px;
+  }
+
+.col .imgholder {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  height: 300px;
+  width: 300px;
+}
+  .imgholder img{
+    height: 300px;
+    width: 300px;
+  }
+
+.col.bg {
+  background: #FFF;
+}
+
+.col.pointer {
+  cursor: pointer;
+}
+.col .feature {
+  font-size: 19px;
+}
+    .col span.feature {
+      font-size: 20px;
+    }
+
+/* ------------------ Responsive ------------------ */
+@media all and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .col.four {
+    width: 48%;
+    margin: 1%;
+  }
+  .col.three {
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .responsivegroup {
+    display: block;
+  }
+  .responsivegroup:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  textarea{
+    width:300px;
+    height:150px;
+  }
+
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .section .mast {
+    background-color: white;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media all and (max-width:450px) {
+  .col, .col.four, .col.three, .col.two {
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .col.extrapad {
+    padding: 1%;
+    margin-bottom: 10px;
+  }
+  .group {
+    display: none;
+  }
+  .col.padded {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .col.bg {
+    background: #FFF;
+  }
+  .title {
+    color: black;
+    font-size: 70px;
+  }
+}

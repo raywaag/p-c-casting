@@ -1,0 +1,136 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar">
+
+    <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+
+      <a href="page_index-logged_in.php" class="logo">P & C Casting</a>
+      <ul class="main-nav" id="js-menu">
+          <li><a href="talent-logged_in.php" class="nav-links">Talent Board</a></li>
+          <li><a href="profile.php" class="nav-links sign">Profile</a></li>
+          <li><a href="logout.php" class="nav-links">Log Out</a></li>
+      </ul>
+  </nav>
+
+
+  <script>
+      let mainNav = document.getElementById('js-menu');
+      let navBarToggle = document.getElementById('js-navbar-toggle');
+
+      navBarToggle.addEventListener('click', function () {
+
+          mainNav.classList.toggle('active');
+      });
+  </script>
+
+
+</body>
+</html>
+
+<style>
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    font-size: 18px;
+    padding-bottom: 10px;
+    background-color: black;
+}
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: white;
+}
+.nav-links{
+  font-size: 18px;
+  margin-right: 60px;
+}
+    .sign{
+      color: black;
+      background-color: gold;
+      border: 1px solid gold;
+      padding: 5px;
+    }
+.nav-links:hover{
+  opacity: 0.75;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+.logo {
+    display: inline-block;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.nav-links.sign:hover{
+  opacity: 1.0;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+
+@media screen and (min-width: 950px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .nav-links {
+        margin-left: 1vw;
+    }
+    .logo {
+        margin-top: 0;
+        font-size: 30px;
+    }
+   .navbar-toggle {
+       display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+        opacity: 0.75;
+    }
+</style>
